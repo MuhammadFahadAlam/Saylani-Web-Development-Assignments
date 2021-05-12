@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>ToDoList</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="upper">
+                    <div class="today">
+                        <div class="date">
+                            <h1 id="date"></h1>
+                            <div class="monthYear">
+                                <p id="month"></p>
+                                <p id="year"></p>
+                            </div>
+                        </div>
+                        <div class="day">
+                            <p id="day"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="list"></div>
+                </div>
+                <div class="lower">
+                    <div class="addDiv">
+                        <div class="add">
+                            <div class="but">
+                                <button
+                                    type="button"
+                                    onclick="addItemField(this)"
+                                >
+                                    <i
+                                        class="fa fa-plus"
+                                        aria-hidden="true"
+                                    ></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

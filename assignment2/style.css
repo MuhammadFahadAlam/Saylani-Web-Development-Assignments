@@ -1,0 +1,663 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Merriweather', serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    min-height: 3em;
+    background-color: #316dc3;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+}
+
+.social_icon {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.social_icon i {
+    color: white;
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+}
+
+.know {
+    width: 40%;
+    color: white;
+    line-height: 1.7;
+}
+
+.but {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.but button {
+    color: #6a797f;
+    border: 1px solid #006618;
+    background-color: #f5f5f5;
+    color: #006618;
+    padding: 0.5em 0.8em;
+    font-size: 0.7em;
+    margin-left: 0.3em;
+}
+
+.nav_bar {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    height: 4em;
+    background-color: #f5f5f5;
+    display: flex;
+    padding: 0.8em 6em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_bar .hamburger {
+    display: none;
+}
+
+#ch {
+    display: none;
+}
+
+.nav_bar .logo img {
+    width: 12em;
+}
+
+.nav_bar nav {
+    display: flex;
+}
+
+.nav_bar nav ul li {
+    display: inline-block;
+    border-radius: 2em;
+    padding: 0.4em 0.6em;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.nav_bar nav ul li a {
+    display: block;
+}
+
+nav ul li i {
+    color: #555555;
+}
+
+.nav_bar nav ul li:hover > ul {
+    display: block;
+}
+
+.nav_bar nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    width: 10em;
+}
+
+.nav_bar nav ul li ul li {
+    background-color: white;
+    width: 10em;
+    position: relative;
+    border-radius: 0;
+}
+
+.nav_bar nav ul li ul li i {
+    color: gray;
+    position: absolute;
+    right: 0.2em;
+}
+
+.nav_bar nav ul li ul li:nth-child(1) {
+    margin-top: 3em;
+}
+
+.nav_bar nav ul li ul li a {
+    background-color: transparent;
+    border-radius: 0;
+    color: grey;
+    padding: 0.2em;
+}
+
+.nav_bar nav ul li ul li:hover {
+    background-color: #316dc3;
+}
+
+.nav_bar nav ul li ul li:hover a {
+    color: white;
+}
+
+.nav_bar nav ul li ul li:hover > ul {
+    display: block;
+}
+
+.nav_bar nav ul li ul li ul {
+    display: none;
+    position: absolute;
+    color: gray;
+    left: 100%;
+    top: -3em;
+}
+
+.nav_bar nav ul li ul li ul li a {
+    color: gray !important;
+}
+
+.nav_bar nav ul li ul li ul li:hover {
+    background-color: #316dc3;
+}
+
+.nav_bar nav ul li ul li ul li:hover a {
+    color: white !important;
+}
+
+.active {
+    background-color: #316dc3;
+}
+
+.active a {
+    color: white;
+}
+
+nav ul li:hover {
+    background-color: #316dc3;
+}
+
+nav ul li:hover a {
+    color: white;
+}
+
+nav ul li:hover i {
+    color: white;
+}
+
+marquee {
+    background-color: #316dc3;
+    color: white;
+    margin: 0.3em 6em;
+    height: 1.8em;
+    padding-top: 0.3em;
+}
+
+marquee span {
+    color: #13c74a;
+}
+
+article {
+    background-color: #f7f8fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 12em;
+}
+
+article h1 {
+    font-size: 2.3em;
+    font-family: 'Merriweather', serif;
+    color: green;
+}
+
+article span {
+    font-family: 'Merriweather', serif;
+    color: #316dc3;
+}
+
+article img {
+    margin: 0.4em;
+    width: 2.4em;
+}
+
+article p {
+    text-align: justify;
+    margin: 1em;
+    color: #878788;
+    line-height: 1.3em;
+}
+
+.stats {
+    background-color: #2755e9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5em 3em;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.stats div img {
+    width: 2.5em;
+}
+
+.stats div h2 {
+    color: white;
+    font-size: 3em;
+    line-height: 1.5em;
+    font-family: 'Merriweather', serif;
+}
+
+.stats p {
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-weight: bold;
+}
+
+.stats span {
+    font-family: 'Merriweather', serif;
+    color: #32dd65;
+    font-size: 1.2em;
+}
+
+.cards {
+    background-color: #f7f8fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 6em;
+}
+
+.cards {
+    font-size: 1em;
+    font-family: 'Merriweather', serif;
+    color: green;
+}
+
+.cards span {
+    font-family: 'Merriweather', serif;
+    color: #316dc3;
+}
+
+.cardholder {
+    margin: 1em;
+    width: 100%;
+}
+
+.cardholder div {
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 2.2em;
+    margin: 1em;
+    background-color: white;
+    box-shadow: 2px 2px 20px rgb(221, 215, 215);
+}
+
+.cardholder div img {
+    width: 4.4em;
+}
+
+.cardholder div h3 {
+    color: #316dc3;
+    line-height: 2.2em;
+}
+
+.upcoming {
+    display: flex;
+    padding: 4em 6em;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.upcoming .mission {
+    width: 69%;
+}
+
+.mission h2,
+.event h2 {
+    color: #316dc3;
+    line-height: 2.2em;
+}
+
+hr {
+    width: 3em;
+    background-color: green;
+    height: 0.2em;
+}
+
+.mission .btn {
+    width: 100%;
+}
+
+.btn div {
+    position: relative;
+    width: 44%;
+    height: 4.5em;
+    float: left;
+    border: 0.05em solid rgb(231, 232, 233);
+    margin: 1em;
+    background-color: #f7f8fa;
+}
+
+.btn div img {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+.btn div h3 {
+    position: absolute;
+    top: 1.3em;
+    left: 4em;
+    color: #316dc3;
+}
+
+.upcoming .event {
+    width: 30%;
+}
+
+.upcoming .event marquee {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    color: #878788;
+    width: 100%;
+    height: 100%;
+}
+
+.event marquee span {
+    color: #316dc3;
+}
+
+.image {
+    font-size: 1em;
+    font-family: 'Merriweather', serif;
+    color: green;
+    text-align: center;
+}
+
+.image span {
+    font-family: 'Merriweather', serif;
+    color: #316dc3;
+}
+
+.image_holder {
+    margin: 1.6em 6em;
+    display: flex;
+    align-items: center;
+}
+
+.image_holder img {
+    width: 20%;
+    padding: 0.1em;
+}
+
+.footer {
+    background-color: #25272e;
+    margin-top: 10em;
+    display: flex;
+    padding: 4em 6em;
+}
+
+.contact {
+    width: 40%;
+}
+
+.links {
+    width: 30%;
+}
+
+.contact {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact p {
+    color: #99999b;
+    line-height: 1.6em;
+}
+
+.contact ul {
+    color: #99999b;
+}
+
+.contact ul li {
+    list-style: none;
+    line-height: 1.8em;
+}
+
+.contact ul li i {
+    color: green;
+}
+
+.links {
+    padding: 0 2em;
+}
+
+.links h4 {
+    color: white;
+}
+
+.links hr {
+    width: 3.2em;
+    margin: 0.4em 0.1em;
+    background-color: green;
+    border: 0;
+}
+
+.connect h4 {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.connect .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social i {
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 2.3em;
+    text-align: center;
+    margin: 0.5em;
+    font-size: 0.9em;
+    background-color: #316dc3;
+}
+
+.copy {
+    background-color: #316dc3;
+    width: 100%;
+    height: 2.8em;
+}
+
+.copy p {
+    color: white;
+    font-size: 0.8em;
+    line-height: 3.4em;
+    padding-left: 7em;
+}
+
+.moveUp {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 1.2em;
+    right: 1em;
+    color: white;
+    width: 4em;
+    height: 4em;
+    border: 0;
+}
+
+.moveUp i {
+    font-size: 2em;
+}
+
+::selection {
+    background-color: black;
+    color: #f2f2f2;
+}
+
+@media (max-width: 1059px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    article {
+        padding: 3em 5em;
+    }
+}
+
+@media (max-width: 1152px) {
+    .cardholder div {
+        width: 45%;
+    }
+
+    .image_holder {
+        flex-direction: column;
+    }
+
+    .image_holder img {
+        display: block;
+        width: 100%;
+        padding-bottom: 0.4em;
+    }
+}
+
+@media (max-width: 922px) {
+    .cardholder div {
+        width: 45%;
+    }
+
+    .stats div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 860px) {
+    .nav_bar {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav_bar .hamburger {
+        display: inline;
+    }
+
+    .nav_bar nav {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .footer {
+        background-color: #25272e;
+        margin-top: 5em;
+        display: flex;
+        padding: 4em 6em;
+    }
+
+    .contact {
+        width: 60%;
+    }
+
+    .links {
+        width: 40%;
+    }
+
+    .contact {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        padding: 1em;
+    }
+
+    .stats {
+        font-size: 0.7em;
+    }
+
+    .upcoming {
+        flex-direction: column;
+    }
+
+    .upcoming .mission {
+        width: 100%;
+    }
+
+    .upcoming .event {
+        width: 60%;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 1em;
+    }
+
+    .header .know {
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 660px) {
+    .header .but {
+        font-size: 0.8em;
+    }
+
+    .cardholder div {
+        width: 100%;
+    }
+
+    .upcoming .mission div {
+        width: 100%;
+    }
+
+    .stats {
+        font-size: 0.5em;
+    }
+
+    .footer{
+        padding: 3em;
+    }
+}
+
+@media (max-width: 450px)
+{
+    .connect{
+        font-size: 0.7em;
+    }
+
+    .connect .social
+    {
+        flex-direction: column;
+    }
+
+    .social i{
+        width: 3em;
+        height: 3em;
+        line-height: 3em;
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1em;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 80%;
+    font-size: 1.1em;
+    border: 1px solid rgb(189, 182, 182);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgb(111, 211, 161), -2px -2px 5px rgb(70, 179, 133);
+}
+
+.screen{
+    width: 100%;
+    height: 20%;
+}
+
+.screen #screen{
+    text-align: right;
+    padding: 1em;
+    font-size: 1.8em;
+    color: white;
+    border: 2px solid rgb(75, 73, 73);
+    border-radius: 5px;
+    background-color: rgb(77, 146, 116);
+    width: 100%;
+    height: 100%;
+}
+
+.board{
+    height: 80%;
+    width: 100%;
+    padding: 2%;
+}
+
+.board button{
+    border-radius: 8px;
+    border: 0;
+    color: rgb(97, 94, 94);
+    background-color: rgb(233, 227, 227);
+    box-shadow:2px 2px 5px rgb(80, 79, 78);
+    margin-top: 2.5%;
+    margin-left: 1%;
+    width: 23%;
+    height: 16.5%;
+}
+
+#two{
+    background-color: rgb(50, 146, 125);
+    color: white;
+    font-size: 1.5em;
+    width: 48%;
+}
+
+::placeholder{
+    color: white;
+}
+
+#mul{
+    background-color: rgb(219, 158, 78);
+    color: white;
+    font-size: 1.2em;
+}
+
+#divi{
+    background-color: rgb(86, 226, 93);
+    color: white;
+    font-size: 1.2em;
+}
+
+#sub{
+    background-color: rgb(72, 175, 201);
+    color: white;
+    font-size: 1.2em;
+}
+
+#add{
+    background-color: rgb(158, 86, 226);
+    color: white;
+    font-size: 1.2em;
+}
+
+#C{
+    background-color: rgb(202, 50, 57);
+    color: white;
+    font-size: 1.2em;
+}
+
+@media (max-width: 1254px ){
+    .board button{
+        width: 22%;
+    }
+}
+
+@media (max-width: 900px ){
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+
+    .board button{
+        margin: 5px;
+    }
+}
+
+@media (max-width: 530px ){
+
+    .board button{
+        margin: 2px;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Overlock&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Quiz App</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<div class="screen">
+					<div class="Qno">
+						<h1>
+							Question <span id="qsNo">1</span><span>/</span
+							><span id="qsTotal">10</span>
+						</h1>
+					</div>
+					<div class="question">
+						<p id="qsStat">
+							Lorem, ipsum dolor sit amet consectetur adipisicing
+							elit. Dicta magni, voluptatem voluptatum fugiat
+						</p>
+					</div>
+					<div class="choices">
+						<div class="choice">
+							<div id="option1">
+								<p id="c1">Lorem, ipsum dolor.</p>
+								<button type="button"></button>
+							</div>
+						</div>
+						<div class="choice">
+							<div id="option2">
+								<p id="c2">Lorem, ipsum dolor.</p>
+								<button type="button"></button>
+							</div>
+						</div>
+						<div class="choice">
+							<div id="option3">
+								<p id="c3">Lorem, ipsum dolor.</p>
+								<button type="button"></button>
+							</div>
+						</div>
+					</div>
+					<div class="next">
+						<button type="button" id="next">Next</button>
+					</div>
+				</div>
+				<div class="start">
+					<div class="startHead">
+						<h1>To Start the Quiz click on the Button Below</h1>
+					</div>
+
+					<div class="startNow">
+						<button type="button" id="start">Start</button>
+					</div>
+				</div>
+				<div class="score">
+					<div class="scoreHead">
+						<h1>Your Scores for this Attempt</h1>
+					</div>
+					<div class="scored">
+						<h1 id="scores"></h1>
+						<p>out of <span id="totalScores"></span></p>
+					</div>
+
+					<div class="retake">
+						<button type="button" id="retake">Retake Quiz</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>

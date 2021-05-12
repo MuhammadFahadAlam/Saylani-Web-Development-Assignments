@@ -1,0 +1,235 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Overlock', cursive;
+}
+
+::selection {
+	background-color: rgb(211, 43, 211);
+	color: white;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	background-color: #f0efe9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	width: 400px;
+	height: 550px;
+	background-color: white;
+	position: relative;
+}
+
+.start {
+	width: 100%;
+	height: 100%;
+	background-color: #202849;
+	border-radius: 15px;
+	box-shadow: 2px 3px 5px black;
+	padding: 40px 50px 20px 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.start .startHead {
+	width: 100%;
+	height: 50%;
+}
+
+.startHead h1 {
+	color: white;
+	border-bottom: 1px solid #077fec;
+	padding-bottom: 5px;
+}
+
+.startNow {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.startNow button {
+	width: 50%;
+	height: 20%;
+	cursor: pointer;
+	border-radius: 15px;
+	border: 0;
+	background-color: #077fec;
+	color: white;
+	font-size: 16px;
+}
+
+.score {
+	width: 100%;
+	height: 100%;
+	background-color: #202849;
+	border-radius: 15px;
+	box-shadow: 2px 3px 5px black;
+	padding: 40px 50px 20px 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	display: none;
+}
+
+.score .scored {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.score .scored h1 {
+	color: #077fec;
+}
+
+.score .scored p {
+	color: white;
+}
+
+.score .scoreHead {
+	width: 100%;
+	height: 20%;
+}
+
+.scoreHead h1 {
+	color: white;
+	border-bottom: 1px solid #077fec;
+	padding-bottom: 5px;
+}
+
+#totalScores {
+	color: rgb(231, 225, 225);
+	font-size: 40px;
+}
+
+.retake {
+	width: 100%;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.retake button {
+	width: 50%;
+	height: 40%;
+	cursor: pointer;
+	border-radius: 15px;
+	border: 0;
+	background-color: #077fec;
+	color: white;
+	font-size: 16px;
+}
+
+.screen {
+	width: 100%;
+	height: 100%;
+	background-color: #202849;
+	border-radius: 15px;
+	box-shadow: 2px 3px 5px black;
+	padding: 40px 50px 20px 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	display: none;
+}
+
+.Qno {
+	width: 100%;
+	height: 15%;
+}
+
+.Qno h1 {
+	color: #077fec;
+	border-bottom: 1px solid white;
+	padding-bottom: 5px;
+}
+
+.Qno h1 span:nth-child(2) {
+	font-size: 15px;
+	color: rgb(219, 208, 208);
+}
+.Qno h1 span:nth-child(3) {
+	font-size: 15px;
+	color: rgb(219, 208, 208);
+}
+
+.question {
+	width: 100%;
+	height: 20%;
+}
+
+.question p {
+	padding-top: 10px;
+	font-size: 18px;
+	color: rgb(229, 226, 226);
+}
+
+.choices {
+	width: 100%;
+	height: 55%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.choice {
+	width: 90%;
+	height: 20%;
+	cursor: pointer;
+	border: 2px solid #077fec;
+	border-radius: 30px;
+}
+
+.choice div {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.choice div p {
+	color: white;
+}
+
+.choice div button {
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	border: 0;
+}
+
+.next {
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.next button {
+	width: 50%;
+	height: 100%;
+	cursor: pointer;
+	border-radius: 15px;
+	border: 0;
+	background-color: #077fec;
+	color: white;
+	font-size: 16px;
+}

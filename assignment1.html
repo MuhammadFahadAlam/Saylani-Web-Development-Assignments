@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Periodic Table</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Helvetica';
+            }
+
+            h1 {
+                background: yellow;
+                text-align: center;
+                font-size: 4vw;
+                margin: 0;
+            }
+
+            .container {
+                width: 100%;
+                padding: 2vw;
+                padding-top: 8vh;
+            }
+
+            .block {
+                width: 5.5%;
+                height: 4vw;
+                padding: 0.1vw;
+                margin: 0;
+                float: left;
+            }
+
+            .block-up {
+                width: 5.5%;
+                height: 4.7vw;
+                padding: 0.1vw;
+                margin: 0;
+                float: left;
+            }
+
+            .element {
+                border: 1px solid rgb(135, 141, 158);
+                margin: 0;
+            }
+
+            .at-no {
+                font-size: 1vw;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                padding-top: 0.3vw;
+            }
+
+            .name {
+                font-size: 1.6vw;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                padding-top: 0.1vw;
+                padding-bottom: 0.28vw;
+            }
+
+            .color1 {
+                background: #fe9b68;
+            }
+
+            .color2 {
+                background: #df9fe1;
+            }
+
+            .color3 {
+                background: #8fc8fb;
+            }
+
+            .color4 {
+                background: #eae3fb;
+            }
+
+            .color5 {
+                background: #f2daa2;
+            }
+
+            .color6 {
+                background: #ffeced;
+            }
+
+            .color7 {
+                background: #c89a0b;
+            }
+
+            .color8 {
+                background: #fff08d;
+            }
+
+            .color9 {
+                background: #cdea8b;
+            }
+
+            .space16 {
+                height: 4vw;
+                padding: 0.1vw;
+                margin: 0;
+                float: left;
+                width: 88%;
+            }
+
+            .space10 {
+                height: 4vw;
+                padding: 0.1vw;
+                margin: 0;
+                float: left;
+                width: 55%;
+            }
+
+            .space2 {
+                height: 4vw;
+                padding: 0.1vw;
+                margin: 0;
+                float: left;
+                width: 11%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The Periodic Table</h1>
+        <div class="container">
+            <div class="row row1">
+                <div class="block">
+                    <div class="element color1">
+                        <p class="at-no">1</p>
+                        <h2 class="name">H</h2>
+                    </div>
+                </div>
+                <div class="space16"></div>
+                <div class="block">
+                    <div class="element color4">
+                        <p class="at-no">2</p>
+                        <h2 class="name">He</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row row2">
+                <div class="block">
+                    <div class="element color2">
+                        <p class="at-no">3</p>
+                        <h2 class="name">Li</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color3">
+                        <p class="at-no">4</p>
+                        <h2 class="name">Be</h2>
+                    </div>
+                </div>
+                <div class="space10"></div>
+                <div class="block">
+                    <div class="element color7">
+                        <p class="at-no">5</p>
+                        <h2 class="name">B</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color1">
+                        <p class="at-no">6</p>
+                        <h2 class="name">C</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color1">
+                        <p class="at-no">7</p>
+                        <h2 class="name">N</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color1">
+                        <p class="at-no">8</p>
+                        <h2 class="name">O</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color5">
+                        <p class="at-no">9</p>
+                        <h2 class="name">F</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color4">
+                        <p class="at-no">10</p>
+                        <h2 class="name">Ne</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row row3">
+                <div class="block color2">
+                    <div class="element">
+                        <p class="at-no">11</p>
+                        <h2 class="name">Na</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color3">
+                        <p class="at-no">12</p>
+                        <h2 class="name">Mg</h2>
+                    </div>
+                </div>
+                <div class="space10"></div>
+                <div class="block">
+                    <div class="element color9">
+                        <p class="at-no">13</p>
+                        <h2 class="name">Al</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color7">
+                        <p class="at-no">14</p>
+                        <h2 class="name">Si</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color1">
+                        <p class="at-no">15</p>
+                        <h2 class="name">P</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color1">
+                        <p class="at-no">16</p>
+                        <h2 class="name">S</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color5">
+                        <p class="at-no">17</p>
+                        <h2 class="name">Cl</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color4">
+                        <p class="at-no">18</p>
+                        <h2 class="name">Ar</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row row4">
+                <div class="block">
+                    <div class="element color2">
+                        <p class="at-no">19</p>
+                        <h2 class="name">K</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color3">
+                        <p class="at-no">20</p>
+                        <h2 class="name">Ca</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">21</p>
+                        <h2 class="name">Sc</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">22</p>
+                        <h2 class="name">Ti</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">23</p>
+                        <h2 class="name">V</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">24</p>
+                        <h2 class="name">Cr</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">25</p>
+                        <h2 class="name">Mn</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">26</p>
+                        <h2 class="name">Fe</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">27</p>
+                        <h2 class="name">Co</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">28</p>
+                        <h2 class="name">Ni</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">29</p>
+                        <h2 class="name">Cu</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">30</p>
+                        <h2 class="name">Zn</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color9">
+                        <p class="at-no">31</p>
+                        <h2 class="name">Ga</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color7">
+                        <p class="at-no">32</p>
+                        <h2 class="name">Ge</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color7">
+                        <p class="at-no">33</p>
+                        <h2 class="name">As</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color1">
+                        <p class="at-no">34</p>
+                        <h2 class="name">Se</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color5">
+                        <p class="at-no">35</p>
+                        <h2 class="name">Br</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color4">
+                        <p class="at-no">36</p>
+                        <h2 class="name">Kr</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row row5">
+                <div class="block">
+                    <div class="element color2">
+                        <p class="at-no">37</p>
+                        <h2 class="name">Rb</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color3">
+                        <p class="at-no">38</p>
+                        <h2 class="name">Sr</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">39</p>
+                        <h2 class="name">Y</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">40</p>
+                        <h2 class="name">Zr</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">41</p>
+                        <h2 class="name">Nb</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">42</p>
+                        <h2 class="name">Mo</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">43</p>
+                        <h2 class="name">Tc</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">44</p>
+                        <h2 class="name">Ru</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">45</p>
+                        <h2 class="name">Rh</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">46</p>
+                        <h2 class="name">Pd</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">47</p>
+                        <h2 class="name">Ag</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">48</p>
+                        <h2 class="name">Cd</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color9">
+                        <p class="at-no">49</p>
+                        <h2 class="name">In</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color9">
+                        <p class="at-no">50</p>
+                        <h2 class="name">Sn</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color7">
+                        <p class="at-no">51</p>
+                        <h2 class="name">Sb</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color7">
+                        <p class="at-no">52</p>
+                        <h2 class="name">Te</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color5">
+                        <p class="at-no">53</p>
+                        <h2 class="name">I</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color4">
+                        <p class="at-no">54</p>
+                        <h2 class="name">Xe</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row row6">
+                <div class="block">
+                    <div class="element color2">
+                        <p class="at-no">55</p>
+                        <h2 class="name">Cs</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color3">
+                        <p class="at-no">56</p>
+                        <h2 class="name">Ba</h2>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">57-71</p>
+                        <h2 class="name">.</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">72</p>
+                        <h2 class="name">Hf</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">73</p>
+                        <h2 class="name">Ta</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">74</p>
+                        <h2 class="name">W</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">75</p>
+                        <h2 class="name">Re</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">76</p>
+                        <h2 class="name">Os</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">77</p>
+                        <h2 class="name">Ir</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">78</p>
+                        <h2 class="name">Pt</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">79</p>
+                        <h2 class="name">Au</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color8">
+                        <p class="at-no">80</p>
+                        <h2 class="name">Hg</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color9">
+                        <p class="at-no">81</p>
+                        <h2 class="name">Tl</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color9">
+                        <p class="at-no">82</p>
+                        <h2 class="name">Pb</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color9">
+                        <p class="at-no">83</p>
+                        <h2 class="name">Bl</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color7">
+                        <p class="at-no">84</p>
+                        <h2 class="name">Po</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color5">
+                        <p class="at-no">85</p>
+                        <h2 class="name">At</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color4">
+                        <p class="at-no">86</p>
+                        <h2 class="name">Rn</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row row7">
+                <div class="block">
+                    <div class="element color2">
+                        <p class="at-no">87</p>
+                        <h2 class="name">Fr</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color3">
+                        <p class="at-no">88</p>
+                        <h2 class="name">Ra</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color6">
+                        <p class="at-no">89-103</p>
+                        <h2 class="name">.</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color8">
+                        <p class="at-no">104</p>
+                        <h2 class="name">Rf</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color8">
+                        <p class="at-no">105</p>
+                        <h2 class="name">Db</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color8">
+                        <p class="at-no">106</p>
+                        <h2 class="name">Sg</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color8">
+                        <p class="at-no">107</p>
+                        <h2 class="name">Bh</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color8">
+                        <p class="at-no">108</p>
+                        <h2 class="name">Hs</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color8">
+                        <p class="at-no">109</p>
+                        <h2 class="name">Mt</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color8">
+                        <p class="at-no">110</p>
+                        <h2 class="name">Ds</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color8">
+                        <p class="at-no">111</p>
+                        <h2 class="name">Rg</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color8">
+                        <p class="at-no">112</p>
+                        <h2 class="name">Cn</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color6">
+                        <p class="at-no">113</p>
+                        <h2 class="name">Nh</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color6">
+                        <p class="at-no">114</p>
+                        <h2 class="name">Fl</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color6">
+                        <p class="at-no">115</p>
+                        <h2 class="name">Mc</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color6">
+                        <p class="at-no">116</p>
+                        <h2 class="name">Lv</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color6">
+                        <p class="at-no">117</p>
+                        <h2 class="name">Ts</h2>
+                    </div>
+                </div>
+                <div class="block-up">
+                    <div class="element color6">
+                        <p class="at-no">118</p>
+                        <h2 class="name">Og</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row row8">
+                <div class="space2"></div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">57</p>
+                        <h2 class="name">La</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">58</p>
+                        <h2 class="name">Co</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">59</p>
+                        <h2 class="name">Pr</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">60</p>
+                        <h2 class="name">Nd</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">61</p>
+                        <h2 class="name">Pm</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">62</p>
+                        <h2 class="name">Sm</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">63</p>
+                        <h2 class="name">Eu</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">64</p>
+                        <h2 class="name">Gd</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">65</p>
+                        <h2 class="name">Tb</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">66</p>
+                        <h2 class="name">Dy</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">67</p>
+                        <h2 class="name">Ho</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">68</p>
+                        <h2 class="name">Er</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">69</p>
+                        <h2 class="name">Tm</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">70</p>
+                        <h2 class="name">Yb</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">71</p>
+                        <h2 class="name">Lu</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row row9">
+                <div class="space2"></div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">89</p>
+                        <h2 class="name">Ac</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">90</p>
+                        <h2 class="name">Th</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">91</p>
+                        <h2 class="name">Pa</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">92</p>
+                        <h2 class="name">U</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">93</p>
+                        <h2 class="name">Np</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">94</p>
+                        <h2 class="name">Pu</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">95</p>
+                        <h2 class="name">Am</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">96</p>
+                        <h2 class="name">Cm</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">97</p>
+                        <h2 class="name">Bk</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">98</p>
+                        <h2 class="name">Cf</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">99</p>
+                        <h2 class="name">Es</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">100</p>
+                        <h2 class="name">Fm</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">101</p>
+                        <h2 class="name">Md</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">102</p>
+                        <h2 class="name">No</h2>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="element color6">
+                        <p class="at-no">103</p>
+                        <h2 class="name">Lr</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

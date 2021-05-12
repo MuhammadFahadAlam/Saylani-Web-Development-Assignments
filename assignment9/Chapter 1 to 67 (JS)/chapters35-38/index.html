@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chapter 35-38</title>
+        <style>
+            .container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 80%;
+                text-align: center;
+            }
+
+            button {
+                margin: 0.5em;
+                height: 4em;
+                width: 9em;
+                background-color: rgb(200, 224, 211);
+                color: rgb(81, 85, 82);
+                box-shadow: 0.2px 0.2px 3px rgb(112, 219, 223),
+                    -0.2px -0.2px 3px rgb(110, 160, 139), 1px 1px 3px gray;
+                font-size: 1em;
+                font-weight: 600;
+                font-family: 'Century Gothic Light';
+                border-radius: 0.8em;
+                border: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <button onclick="task1()">Task 1</button>
+            <button onclick="task2()">Task 2</button>
+            <button onclick="task3()">Task 3</button>
+            <button onclick="task4(5, 5, 'x')">Task 4</button>
+            <button onclick="task5(5)">Task 5</button>
+            <button onclick="task6(5)">Task 6</button>
+            <button onclick="task7(5, 20)">Task 7</button>
+            <button onclick="calculateHypotenuse(3,4)">Task 8</button>
+            <button onclick="task9(5, 4)">Task 9</button>
+            <button onclick="task10('madam')">Task 10</button>
+            <button onclick="task11('the quick brown fox')">Task 11</button>
+            <button onclick="task12('Web Development Tutorial')">
+                Task 12
+            </button>
+            <button onclick="task13('JSResourceS.com', 'o')">Task 13</button>
+            <button onclick="task14(3)">Task 14</button>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

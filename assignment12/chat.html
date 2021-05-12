@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-database.js"></script>
+		<script>
+			var firebaseConfig = {
+				apiKey: 'AIzaSyDwPCB3t2HbTlluw33145WPnQB-ooXvvmY',
+				authDomain: 'chatapp-c5468.firebaseapp.com',
+				databaseURL: 'https://chatapp-c5468.firebaseio.com',
+				projectId: 'chatapp-c5468',
+				storageBucket: 'chatapp-c5468.appspot.com',
+				messagingSenderId: '411437350379',
+				appId: '1:411437350379:web:5cd88dc53228350810adae',
+			};
+			firebase.initializeApp(firebaseConfig);
+		</script>
+		<title>ChatApp</title>
+	</head>
+	<body>
+		<div class="main">
+			<div class="nav">
+				<button onclick="logOut()">Log Out</button>
+			</div>
+			<div class="chatContainer">
+				<div class="message">
+					<ul id="chatList"></ul>
+				</div>
+				<div class="input">
+					<input
+						type="text"
+						name="chatBar"
+						id="chatBar"
+						placeholder="write message here"
+					/>
+					<button onclick="addMessage()">Send</button>
+				</div>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style2.css" />
+
+        <script
+            src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+            data-auto-replace-svg="nest"
+        ></script>
+        <title>About</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="collapse animated" id="sidebar">
+                <div class="sidebar_header">
+                    <div class="channel_logo">
+                        <img src="logo.png" alt="Logo" />
+                    </div>
+                    <div class="subscribe">
+                        <button class="btn btn-danger" onclick=" window.open('https://www.youtube.com/c/forthegreatergood?sub_confirmation=1','_blank')">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+                <div class="sidebar_menu">
+                    <ul class="menu navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link btn menu_btn" href="index.html"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn menu_btn" href="about.html"
+                                >About</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn menu_btn" href="videos.html"
+                                >Videos</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link btn menu_btn active"
+                                href="blogs.html"
+                                >Blogs</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn menu_btn" href="#"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row row1">
+                        <div class="col-12 d-flex">
+                            <button
+                                class="stylesBut bg-transparent"
+                                id="sidebarCollapse"
+                                role="button"
+                                data-toggle="collapse"
+                                data-target="#sidebar"
+                                aria-expanded="false"
+                                aria-controls="sidebar"
+                            >
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row row2">
+                        <div class="col-md-10 col-sm-11 mx-auto">
+                            <div class="main-cont container-fluid bg-white">
+                                <div
+                                    class="row"
+                                    id="page1"
+                                >
+                                    <h1 class="text-danger">
+                                        Blogs
+                                    </h1>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Cupiditate nam
+                                        expedita natus eum reprehenderit
+                                        necessitatibus blanditiis, ullam
+                                        quisquam pariatur. Ea modi et provident
+                                        doloremque possimus harum voluptates
+                                        placeat explicabo expedita!
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <img
+                                                class="card-img-top"
+                                                src="https://via.placeholder.com/100"
+                                                alt="Card image cap"
+                                                height="170px"
+                                            />
+                                            <div class="card-body">
+                                                <h3 class="card-title">
+                                                    Unravelling the Labyrinth of AI Myths while pursuing AI
+                                                </h3>
+                                                <p class="card-text">
+                                                    Artificial intelligence is the harbinger of doom, destroyer of employments and pure science fiction.
+                                                </p>
+                                                <a
+                                                    href="#"
+                                                    class="btn btn-primary"
+                                                    >Read Now</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="socialBut">
+                            <button
+                                role="button"
+                                data-toggle="collapse"
+                                data-target="#social_container"
+                            >
+                                <i class="fas fa-angle-up"></i>
+                            </button>
+                        </div>
+                        <div class="collapse" id="social_container">
+                            <span class="youtube"
+                                ><i class="fab fa-youtube"></i
+                            ></span>
+                            <span class="fb"
+                                ><i class="fab fa-facebook-f"></i
+                            ></span>
+                            <span class="twitter"
+                                ><i class="fab fa-twitter"></i
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Popper.JS -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Bootstrap JS -->
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="js\main.js"></script>
+    </body>
+</html>
